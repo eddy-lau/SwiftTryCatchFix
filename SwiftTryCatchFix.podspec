@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'SwiftTryCatchFix'
-  s.version      = '1.0.0'
+  s.version      = '1.0.1'
   s.summary      = 'Adds try-catch support for Swift'
   s.description  = s.summary + ' via CocoaPods'
   s.homepage     = 'https://github.com/williamFalcon/SwiftTryCatch'
@@ -12,4 +12,5 @@ Pod::Spec.new do |s|
   s.watchos.deployment_target = "4.0"
   s.tvos.deployment_target = "12.0"
   s.source_files = 'SwiftTryCatch.{h,m}'
+  s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES' }
 end
